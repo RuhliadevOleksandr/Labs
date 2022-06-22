@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Disciplines>
+  <Discipline>
+    <Id>1</Id>
+    <Name>Фізика - 1</Name>
+    <Form>Залік</Form>
+    <LecturerId>7</LecturerId>
+    <PractitionerId>7</PractitionerId>
+  </Discipline>
+  <Discipline>
+    <Id>2</Id>
+    <Name>Вища математика - 2</Name>
+    <Form>Екзамен</Form>
+    <LecturerId>4</LecturerId>
+    <PractitionerId>6</PractitionerId>
+  </Discipline>
+  <Discipline>
+    <Id>3</Id>
+    <Name>Теорія ймовірностей</Name>
+    <Form>Залік</Form>
+    <LecturerId>5</LecturerId>
+    <PractitionerId>2</PractitionerId>
+  </Discipline>
+  <Discipline>
+    <Id>4</Id>
+    <Name>Англійська мова</Name>
+    <Form>Залік</Form>
+    <LecturerId>1</LecturerId>
+    <PractitionerId>1</PractitionerId>
+  </Discipline>
+  <Discipline>
+    <Id>5</Id>
+    <Name>Аналіз даних</Name>
+    <Form>Залік</Form>
+    <LecturerId>4</LecturerId>
+    <PractitionerId>2</PractitionerId>
+  </Discipline>
+</Disciplines>

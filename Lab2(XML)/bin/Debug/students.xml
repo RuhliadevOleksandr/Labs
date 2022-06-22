@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Students>
+  <Student>
+    <Id>1</Id>
+    <FirstName>Сергій</FirstName>
+    <LastName>Романченко</LastName>
+    <Patronymic>Олександрович</Patronymic>
+    <Course>1</Course>
+  </Student>
+  <Student>
+    <Id>2</Id>
+    <FirstName>Любов</FirstName>
+    <LastName>Дмитренко</LastName>
+    <Patronymic>Петрівна</Patronymic>
+    <Course>3</Course>
+  </Student>
+  <Student>
+    <Id>3</Id>
+    <FirstName>Вікторія</FirstName>
+    <LastName>Захарчук</LastName>
+    <Patronymic>Євгеніївна</Patronymic>
+    <Course>3</Course>
+  </Student>
+  <Student>
+    <Id>4</Id>
+    <FirstName>Павло</FirstName>
+    <LastName>Середа</LastName>
+    <Patronymic>Миколайович</Patronymic>
+    <Course>2</Course>
+  </Student>
+  <Student>
+    <Id>5</Id>
+    <FirstName>Світлана</FirstName>
+    <LastName>Шинкаренко</LastName>
+    <Patronymic>Тарасівна</Patronymic>
+    <Course>1</Course>
+  </Student>
+</Students>
