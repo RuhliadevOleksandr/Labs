@@ -1,0 +1,7 @@
+C:\Users\Lenovo\source\repos\Lab1\Lab3(Builder)\obj\Debug\Lab3(Builder).csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\Lab1\Lab3(Builder)\obj\Debug\Lab3(Builder).csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\Lab1\Lab3(Builder)\bin\Debug\Lab3(Builder).exe.config
+C:\Users\Lenovo\source\repos\Lab1\Lab3(Builder)\bin\Debug\Lab3(Builder).exe
+C:\Users\Lenovo\source\repos\Lab1\Lab3(Builder)\bin\Debug\Lab3(Builder).pdb
+C:\Users\Lenovo\source\repos\Lab1\Lab3(Builder)\obj\Debug\Lab3(Builder).exe
+C:\Users\Lenovo\source\repos\Lab1\Lab3(Builder)\obj\Debug\Lab3(Builder).pdb
