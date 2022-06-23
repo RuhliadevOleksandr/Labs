@@ -16,7 +16,7 @@ namespace Builder
         /// <summary>
         /// Директор компанії
         /// </summary>
-        public Person CompanyDirector { get; set; }
+        public Worker CompanyDirector { get; set; }
 
         /// <summary>
         /// Роботодавець компанії

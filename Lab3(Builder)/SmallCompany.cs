@@ -16,7 +16,7 @@ namespace Builder
         /// <summary>
         /// Директор компанії
         /// </summary>
-        public IEmployee CompanyDirector { get; set; }
+        public Worker CompanyDirector { get; set; }
 
         /// <summary>
         /// Команда розробників

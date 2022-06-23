@@ -16,7 +16,7 @@ namespace Builder
         /// <summary>
         /// Директор компанії
         /// </summary>
-        private IEmployee _companyDirector;
+        private Worker _companyDirector;
 
         /// <summary>
         /// Команда розробників
@@ -36,7 +36,7 @@ namespace Builder
         public void AddDirector()
         {
             Person director = _data.CompanyDirectors[0];
-            _companyDirector = new Person()
+            _companyDirector = new Worker()
             {
                 FirstName = director.FirstName,
                 LastName = director.LastName,

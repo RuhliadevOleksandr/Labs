@@ -3,12 +3,12 @@
     /// <summary>
     /// Рівень розробника
     /// </summary>
-    public enum DeveloperLevel { None, Junior, Middle, Senior };
+    public enum DeveloperLevel { Junior, Middle, Senior };
 
     /// <summary>
     /// Клас розробник
     /// </summary>
-    public class Developer : Person
+    public class Developer : Worker
     {
         /// <summary>
         /// Рівень розробника
