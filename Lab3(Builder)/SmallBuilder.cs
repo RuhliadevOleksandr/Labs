@@ -23,17 +23,19 @@ namespace Builder
         /// </summary>
         private List<IEmployee> _developerTeam = new List<IEmployee>();
 
+        /// <summary>
+        /// Дані компанії
+        /// </summary>
+        private DataContext _data = new DataContext();
         public void CreateName()
         {
-            DataContext data = new DataContext();
             TextInfo textInfo = new CultureInfo("ua-UA", false).TextInfo;
-            _companyName = textInfo.ToTitleCase(data.CompanyNames[0]);
+            _companyName = textInfo.ToTitleCase(_data.CompanyNames[0]);
         }
 
         public void AddDirector()
         {
-            DataContext data = new DataContext();
-            Person director = data.CompanyDirectors[0];
+            Person director = _data.CompanyDirectors[0];
             _companyDirector = new Person()
             {
                 FirstName = director.FirstName,
@@ -46,9 +48,7 @@ namespace Builder
 
         public void AddDeveloperTeam()
         {
-            DataContext data = new DataContext();
-
-            Developer teamLead = data.TeamLeads[0];
+            Developer teamLead = _data.TeamLeads[0];
             _developerTeam = new List<IEmployee>
             {
                 new Developer()
@@ -60,7 +60,7 @@ namespace Builder
                 }
             };
 
-            List<Developer> developers = data.Developers[0];
+            List<Developer> developers = _data.Developers[0];
             foreach (Developer developer in developers)
             {
                 _developerTeam.Add(
