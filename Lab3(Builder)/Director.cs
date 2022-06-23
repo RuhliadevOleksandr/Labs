@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Builder
+﻿namespace Builder
 { 
     /// <summary>
     /// Директор, який констроює продукт
@@ -29,15 +27,15 @@ namespace Builder
             switch (_builder)
             {
                 case SmallBuilder _:
-                    _builder.CreateName(string.Empty);
-                    _builder.AddDirector(new Person());
-                    _builder.AddDeveloperTeam(new List<Developer>(), new Developer());
+                    _builder.CreateName();
+                    _builder.AddDirector();
+                    _builder.AddDeveloperTeam();
                     break;
                 case MediumBuilder _:
-                    _builder.CreateName(string.Empty);
-                    _builder.AddDirector(new Person());
-                    _builder.AddEmployer(new Person());
-                    _builder.AddDeveloperTeam(new List<Developer>(), new Developer());
+                    _builder.CreateName();
+                    _builder.AddDirector();
+                    _builder.AddEmployer();
+                    _builder.AddDeveloperTeam();
                     break;
             }
         }

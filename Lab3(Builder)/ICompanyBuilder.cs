@@ -10,21 +10,21 @@ namespace Builder
         /// <summary>
         /// Сворити ім'я компанії
         /// </summary>
-        void CreateName(string companyName);
+        void CreateName();
 
         /// <summary>
         /// Додати директора компанії
         /// </summary>
-        void AddDirector(Person director);
+        void AddDirector();
 
         /// <summary>
         /// Додати роботодавця компанії
         /// </summary>
-        void AddEmployer(Person director);
+        void AddEmployer();
 
         /// <summary>
         /// Додати команду розробників
         /// </summary>
-        void AddDeveloperTeam(List<Developer> developers, Developer teamLead);
+        void AddDeveloperTeam();
     }
 }
