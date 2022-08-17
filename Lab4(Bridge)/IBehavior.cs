@@ -1,17 +1,65 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Composite
+﻿namespace Bridge
 {
     /// <summary>
-    /// Поведінка
+    /// Способи харчування тварин
+    /// </summary>
+    public enum WaysOfEating 
+    { 
+        /// <summary>
+        /// Рослиноїдний
+        /// </summary>
+        Herbivorous, 
+
+        /// <summary>
+        /// Хижак
+        /// </summary>
+        Carnivorous, 
+
+        /// <summary>
+        /// Всеїдний
+        /// </summary>
+        Omnivorous, 
+
+        /// <summary>
+        /// Падальник
+        /// </summary>
+        Detritivorous 
+    };
+
+    /// <summary>
+    /// Способи проживання тварин
+    /// </summary>
+    public enum WaysOfLiving
+    {
+        /// <summary>
+        /// Нічний спосіб проживання
+        /// </summary>
+        Nocturnal,
+
+        /// <summary>
+        /// Сутінковий спосіб проживання
+        /// </summary>
+        Crepuscular,
+
+        /// <summary>
+        /// Денний спосіб проживання
+        /// </summary>
+        Diurnal
+    };
+
+    /// <summary>
+    /// Поведінка тварини
     /// </summary>
     public interface IBehavior
     {
-        void WaysOfEating();
-        void WaysOfLiving();
+        /// <summary>
+        /// Спосіб харчування тварини
+        /// </summary>
+        WaysOfEating Eating { get; }
+
+        /// <summary>
+        /// Спосіб проживання тварини
+        /// </summary>
+        WaysOfLiving Living { get; }
     }
 }

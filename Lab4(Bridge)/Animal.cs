@@ -8,24 +8,11 @@
         /// Птахи
         /// </summary>
         Aves,
+
         /// <summary>
         /// Ссавці
         /// </summary>
         Mammalia
-    }
-
-    /// <summary>
-    /// Ряди тварин
-    /// </summary>
-    public enum AnimalOrders {
-        /// <summary>
-        /// Совоподібні
-        /// </summary>
-        Strigiformes,
-        /// <summary>
-        /// Зайцеподібні
-        /// </summary>
-        Lagomorpha
     }
 
     /// <summary>
@@ -44,12 +31,7 @@
         protected AnimalClasses _class;
 
         /// <summary>
-        /// Ряд тварини
-        /// </summary>
-        protected AnimalOrders _order;
-
-        /// <summary>
-        /// Отримати клас тварини
+        /// Отримання класу тварини
         /// </summary>
         public AnimalClasses Class 
         {
@@ -60,23 +42,25 @@
         }
 
         /// <summary>
-        /// Отримати ряд тварини
-        /// </summary>
-        public AnimalOrders Order 
-        { 
-            get 
-            {
-                return _order;
-            }        
-        }
-
-        /// <summary>
         /// Конструктор з параметром
         /// </summary>
-        /// <param name="behavior">Поведінка</param>
+        /// <param name="behavior">Поведінка тварини</param>
         public Animal(IBehavior behavior)
         {
             _behavior = behavior;
+        }
+
+        /// <summary>
+        /// Приведення до рядкового типу
+        /// </summary>
+        /// <returns>Рядок з описом тварини</returns>
+        public override string ToString()
+        {
+            return string.Format(
+                                 $"Клас тварини: {_class};" +
+                                 $"\nСпосіб харчування: {_behavior.Eating};" +
+                                 $"\nСпосіб проживання: {_behavior.Living}"
+                                );
         }
     }
 }

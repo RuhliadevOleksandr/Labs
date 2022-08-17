@@ -1,7 +1,0 @@
-C:\Users\Lenovo\Source\Repos\Labs\Lab4(Composite)\bin\Debug\Lab4(Composite).exe.config
-C:\Users\Lenovo\Source\Repos\Labs\Lab4(Composite)\bin\Debug\Lab4(Composite).exe
-C:\Users\Lenovo\Source\Repos\Labs\Lab4(Composite)\bin\Debug\Lab4(Composite).pdb
-C:\Users\Lenovo\Source\Repos\Labs\Lab4(Composite)\obj\Debug\Lab4(Composite).csproj.AssemblyReference.cache
-C:\Users\Lenovo\Source\Repos\Labs\Lab4(Composite)\obj\Debug\Lab4(Composite).csproj.CoreCompileInputs.cache
-C:\Users\Lenovo\Source\Repos\Labs\Lab4(Composite)\obj\Debug\Lab4(Composite).exe
-C:\Users\Lenovo\Source\Repos\Labs\Lab4(Composite)\obj\Debug\Lab4(Composite).pdb

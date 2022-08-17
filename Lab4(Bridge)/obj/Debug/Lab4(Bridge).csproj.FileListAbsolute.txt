@@ -1,0 +1,7 @@
+C:\Users\Lenovo\source\repos\Labs\Lab4(Bridge)\bin\Debug\Lab4(Bridge).exe.config
+C:\Users\Lenovo\source\repos\Labs\Lab4(Bridge)\bin\Debug\Lab4(Bridge).exe
+C:\Users\Lenovo\source\repos\Labs\Lab4(Bridge)\bin\Debug\Lab4(Bridge).pdb
+C:\Users\Lenovo\source\repos\Labs\Lab4(Bridge)\obj\Debug\Lab4(Bridge).csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\Labs\Lab4(Bridge)\obj\Debug\Lab4(Bridge).csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\Labs\Lab4(Bridge)\obj\Debug\Lab4(Bridge).exe
+C:\Users\Lenovo\source\repos\Labs\Lab4(Bridge)\obj\Debug\Lab4(Bridge).pdb

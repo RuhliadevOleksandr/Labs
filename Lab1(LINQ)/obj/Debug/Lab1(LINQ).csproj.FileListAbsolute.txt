@@ -5,3 +5,10 @@ C:\Users\Lenovo\source\repos\Lab1\Lab1\bin\Debug\Lab1.exe
 C:\Users\Lenovo\source\repos\Lab1\Lab1\bin\Debug\Lab1.pdb
 C:\Users\Lenovo\source\repos\Lab1\Lab1\obj\Debug\Lab1.exe
 C:\Users\Lenovo\source\repos\Lab1\Lab1\obj\Debug\Lab1.pdb
+C:\Users\Lenovo\Source\Repos\Labs\Lab1(LINQ)\obj\Debug\Lab1(LINQ).csproj.AssemblyReference.cache
+C:\Users\Lenovo\Source\Repos\Labs\Lab1(LINQ)\obj\Debug\Lab1(LINQ).csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Source\Repos\Labs\Lab1(LINQ)\obj\Debug\Lab1.exe
+C:\Users\Lenovo\Source\Repos\Labs\Lab1(LINQ)\obj\Debug\Lab1.pdb
+C:\Users\Lenovo\Source\Repos\Labs\Lab1(LINQ)\bin\Debug\Lab1.exe.config
+C:\Users\Lenovo\Source\Repos\Labs\Lab1(LINQ)\bin\Debug\Lab1.exe
+C:\Users\Lenovo\Source\Repos\Labs\Lab1(LINQ)\bin\Debug\Lab1.pdb

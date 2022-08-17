@@ -1,17 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Bridge
+﻿namespace Bridge
 {
+    /// <summary>
+    /// Клас білого зайця
+    /// </summary>
     public class WhiteHare : Animal
     {
-       public WhiteHare(IBehavior behavior) : base(behavior)
+        /// <summary>
+        /// Конструктор з параметром
+        /// </summary>
+        /// <param name="behavior">Поведінка</param>
+        public WhiteHare(IBehavior behavior) : base(behavior)
         {
             _class = AnimalClasses.Mammalia;
-            _order = AnimalOrders.Lagomorpha;
+        }
+
+        /// <summary>
+        /// Приведення до рядкового типу
+        /// </summary>
+        /// <returns>Рядок з описом зайця</returns>
+        public override string ToString()
+        {
+            return string.Format("White hare:" + $"\n{base.ToString()}");
         }
     }
 }

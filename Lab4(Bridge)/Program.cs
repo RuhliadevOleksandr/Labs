@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Bridge
 {
@@ -12,7 +9,25 @@ namespace Bridge
         {
             Console.OutputEncoding = Encoding.UTF8;
 
-            Console.WriteLine(" Настав ранок:");
+
+            Animal owl = new TawnyOwl( new GroupLifestyle(
+                                                            WaysOfEating.Carnivorous, 
+                                                            WaysOfLiving.Nocturnal,
+                                                            AnimalGroups.Family
+                                                           ) );
+
+            Console.WriteLine(owl);
+
+            Console.WriteLine();
+            
+            Animal hare = new WhiteHare( new SolitaryLifestyle(
+                                                               WaysOfEating.Herbivorous,
+                                                               WaysOfLiving.Crepuscular
+                                                              ) );
+
+            Console.WriteLine(hare);
+
+            Console.ReadKey();
         }
     }
 }

@@ -38,9 +38,15 @@
   <ItemGroup>
     <Compile Include="Animal.cs" />
     <Compile Include="IBehavior.cs" />
+    <Compile Include="SolitaryLifestyle.cs" />
+    <Compile Include="GroupLifestyle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="TawnyOwl.cs" />
     <Compile Include="WhiteHare.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
