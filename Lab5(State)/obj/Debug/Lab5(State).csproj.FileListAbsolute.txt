@@ -1,0 +1,7 @@
+C:\Users\Lenovo\source\repos\Labs\Lab5(State)\bin\Debug\Lab5(State).exe.config
+C:\Users\Lenovo\source\repos\Labs\Lab5(State)\bin\Debug\Lab5(State).exe
+C:\Users\Lenovo\source\repos\Labs\Lab5(State)\bin\Debug\Lab5(State).pdb
+C:\Users\Lenovo\source\repos\Labs\Lab5(State)\obj\Debug\Lab5(State).csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\Labs\Lab5(State)\obj\Debug\Lab5(State).csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\Labs\Lab5(State)\obj\Debug\Lab5(State).exe
+C:\Users\Lenovo\source\repos\Labs\Lab5(State)\obj\Debug\Lab5(State).pdb
