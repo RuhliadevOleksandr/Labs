@@ -6,12 +6,18 @@
     public class WhiteHare : Animal
     {
         /// <summary>
+        /// Довжина вух(см) зайця
+        /// </summary>
+        public double EarsLength { get; set; }
+
+        /// <summary>
         /// Конструктор з параметром
         /// </summary>
         /// <param name="behavior">Поведінка</param>
-        public WhiteHare(IBehavior behavior) : base(behavior)
+        /// <param name="earsLength">Довжина вух(см)</param>
+        public WhiteHare(IBehavior behavior, double earsLength) : base(behavior)
         {
-            _class = AnimalClasses.Mammalia;
+            EarsLength = earsLength;
         }
 
         /// <summary>
@@ -20,7 +26,11 @@
         /// <returns>Рядок з описом зайця</returns>
         public override string ToString()
         {
-            return string.Format("White hare:" + $"\n{base.ToString()}");
+            return string.Format(
+                                 "Білий заєць:" + 
+                                 $"\nДовжина вух: {EarsLength}(см)" +
+                                 $"{base.ToString()}"
+                                );
         }
     }
 }

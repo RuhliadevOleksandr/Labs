@@ -6,12 +6,18 @@
     public class TawnyOwl : Animal
     {
         /// <summary>
+        /// Розмах крил(см) сови
+        /// </summary>
+        public double Wingspan { get; set; }
+
+        /// <summary>
         /// Конструктор з параметром
         /// </summary>
-        /// <param name="behavior">поведінка</param>
-        public TawnyOwl(IBehavior behavior) : base(behavior)
+        /// <param name="behavior">Поведінка</param>
+        /// <param name="wingspan">Розмах крил(см)</param>
+        public TawnyOwl(IBehavior behavior, double wingspan) : base(behavior)
         {
-            _class = AnimalClasses.Aves;
+            Wingspan = wingspan;
         }
 
         /// <summary>
@@ -20,7 +26,11 @@
         /// <returns>Рядок з описом сови</returns>
         public override string ToString()
         {
-            return string.Format("Tawny owl:" + $"\n{base.ToString()}");
+            return string.Format(
+                                 "Сіра сова:" +
+                                 $"\nРозмах крил: {Wingspan}(см)" +
+                                 $"{base.ToString()}"
+                                );
         }
     }
 }
