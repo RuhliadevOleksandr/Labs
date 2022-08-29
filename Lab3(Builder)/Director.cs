@@ -24,6 +24,7 @@
         /// </summary>
         public void PerformBuild()
         {
+            _builder.Reset();
             switch (_builder)
             {
                 case SmallBuilder _:

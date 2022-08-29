@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Globalization;
 
 namespace Builder
 {
@@ -9,34 +8,29 @@ namespace Builder
     public class SmallBuilder : ICompanyBuilder
     {
         /// <summary>
-        /// Директор компанії
+        /// Невелика компанія
         /// </summary>
-        private string _companyName;
-
-        /// <summary>
-        /// Директор компанії
-        /// </summary>
-        private Worker _companyDirector;
-
-        /// <summary>
-        /// Команда розробників
-        /// </summary>
-        private List<IEmployee> _developerTeam = new List<IEmployee>();
+        private SmallCompany _company;
 
         /// <summary>
         /// Дані компанії
         /// </summary>
         private DataContext _data = new DataContext();
+
+        public void Reset()
+        {
+            _company = new SmallCompany();
+        }
+
         public void CreateName()
         {
-            TextInfo textInfo = new CultureInfo("ua-UA", false).TextInfo;
-            _companyName = textInfo.ToTitleCase(_data.CompanyNames[0]);
+            _company.CompanyName = _data.CompanyNames[0].ToUpper();
         }
 
         public void AddDirector()
         {
             Person director = _data.CompanyDirectors[0];
-            _companyDirector = new Worker()
+            _company.CompanyDirector = new Worker()
             {
                 FirstName = director.FirstName,
                 LastName = director.LastName,
@@ -49,7 +43,7 @@ namespace Builder
         public void AddDeveloperTeam()
         {
             Developer teamLead = _data.TeamLeads[0];
-            _developerTeam = new List<IEmployee>
+            _company.DeveloperTeam = new List<IEmployee>
             {
                 new Developer()
                 {
@@ -63,7 +57,7 @@ namespace Builder
             List<Developer> developers = _data.Developers[0];
             foreach (Developer developer in developers)
             {
-                _developerTeam.Add(
+                _company.DeveloperTeam.Add(
                                    new Developer()
                                    {
                                        FirstName = developer.FirstName,
@@ -76,17 +70,12 @@ namespace Builder
         }
 
         /// <summary>
-        /// Створити компанію
+        /// Повертає компанію
         /// </summary>
         /// <returns>Невелика компанія, по розробці ПЗ</returns>
-        public SmallCompany Build()
+        public SmallCompany GetCompany()
         {
-            return new SmallCompany() 
-            { 
-                CompanyName = _companyName,
-                CompanyDirector = _companyDirector, 
-                DeveloperTeam = _developerTeam
-            };
+            return _company;
         }
     }
 }

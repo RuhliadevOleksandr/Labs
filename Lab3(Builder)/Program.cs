@@ -16,7 +16,7 @@ namespace Builder
 
             director.PerformBuild();
 
-            SmallCompany small = smallCompany.Build();
+            SmallCompany small = smallCompany.GetCompany();
 
 
             MediumBuilder mediumCompany = new MediumBuilder();
@@ -25,7 +25,7 @@ namespace Builder
 
             director.PerformBuild();
 
-            MediumCompany medium = mediumCompany.Build();
+            MediumCompany medium = mediumCompany.GetCompany();
 
 
             Console.WriteLine($"Невелика компанія: {small}");

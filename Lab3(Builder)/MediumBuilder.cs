@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Globalization;
 
 namespace Builder
 {
@@ -9,40 +8,29 @@ namespace Builder
     public class MediumBuilder : ICompanyBuilder
     {
         /// <summary>
-        /// Директор компанії
+        /// Середня компанія
         /// </summary>
-        private string _companyName;
-
-        /// <summary>
-        /// Директор компанії
-        /// </summary>
-        private Worker _companyDirector;
-
-        /// <summary>
-        /// Роботодавець компанії
-        /// </summary>
-        private Employer _сompanyEmployer;
-
-        /// <summary>
-        /// Команда розробників
-        /// </summary>
-        private List<Developer> _developerTeam = new List<Developer>();
+        private MediumCompany _company;
 
         /// <summary>
         /// Дані компанії
         /// </summary>
         private DataContext _data = new DataContext();
 
+        public void Reset()
+        {
+            _company = new MediumCompany();
+        }
+
         public void CreateName()
         {
-            TextInfo textInfo = new CultureInfo("ua-UA", false).TextInfo;
-            _companyName = textInfo.ToTitleCase(_data.CompanyNames[1]);
+            _company.CompanyName = _data.CompanyNames[1].ToUpper();
         }
 
         public void AddDirector()
         {
             Person director = _data.CompanyDirectors[1];
-            _companyDirector = new Worker()
+            _company.CompanyDirector = new Worker()
             {
                 FirstName = director.FirstName,
                 LastName = director.LastName,
@@ -53,7 +41,7 @@ namespace Builder
         public void AddEmployer()
         {
             Person employer = _data.Employers[0];
-            _сompanyEmployer = new Employer()
+            _company.CompanyEmployer = new Employer()
             {
                 FirstName = employer.FirstName,
                 LastName = employer.LastName,
@@ -64,7 +52,7 @@ namespace Builder
         public void AddDeveloperTeam()
         {
             Developer teamLead = _data.TeamLeads[1];
-            _developerTeam = new List<Developer>
+            _company.DeveloperTeam = new List<Developer>
             {
                 new Developer()
                 {
@@ -74,12 +62,12 @@ namespace Builder
                     Position = CompanyPosition.TeamLead
                 }
             };
-            _сompanyEmployer.NumberOfEmployees += 1;
+            _company.CompanyEmployer.NumberOfEmployees += 1;
 
             List<Developer> developers = _data.Developers[1];
             foreach (Developer developer in developers)
             {
-                _developerTeam.Add(
+                _company.DeveloperTeam.Add(
                                         new Developer()
                                         {
                                             FirstName = developer.FirstName,
@@ -88,23 +76,17 @@ namespace Builder
                                             Position = CompanyPosition.Developer
                                         }
                                     );
-                _сompanyEmployer.NumberOfEmployees += 1;
+                _company.CompanyEmployer.NumberOfEmployees += 1;
             }
         }
 
         /// <summary>
-        /// Створити компанію
+        /// Повертає компанію
         /// </summary>
         /// <returns>Середня компанія, по розробці ПЗ</returns>
-        public MediumCompany Build()
+        public MediumCompany GetCompany()
         {
-            return new MediumCompany()
-            {
-                CompanyName = _companyName,
-                CompanyDirector = _companyDirector,
-                CompanyEmployer = _сompanyEmployer,
-                DeveloperTeam = _developerTeam
-            };
+            return _company;
         }
     }
 }

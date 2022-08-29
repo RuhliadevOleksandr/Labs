@@ -1,12 +1,15 @@
-﻿using System.Collections.Generic;
-
-namespace Builder
+﻿namespace Builder
 {
     /// <summary>
     /// Інтерфейс будівельника компаній
     /// </summary>
     public interface ICompanyBuilder
     {
+        /// <summary>
+        /// Створення нової компанії
+        /// </summary>
+        void Reset();
+
         /// <summary>
         /// Сворити ім'я компанії
         /// </summary>
