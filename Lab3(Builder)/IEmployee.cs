@@ -3,7 +3,7 @@
     /// <summary>
     /// Посада співробітника в комнанії
     /// </summary>
-    public enum CompanyPosition { None, Director, TeamLead, Developer };
+    public enum CompanyPosition { Director, TeamLead, Developer };
 
     /// <summary>
     /// Інтерфейс співробітник
