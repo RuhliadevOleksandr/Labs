@@ -1,19 +1,36 @@
-﻿namespace State
+﻿using System;
+
+namespace State
 {
     /// <summary>
     /// Клас стану завдання "Не виконано"
     /// </summary>
     public class NotCompleted : ITaskState
     {
-        public void CompleteTask(Task task) { }
+        public void CompleteTask(Task task)
+        {
+            throw new NotSupportedException("Завдання вже недоступне!");
+        }
 
-        public void FoundMistakes(Task task) { }
+        public void FoundMistakes(Task task)
+        {
+            throw new NotSupportedException("Завдання вже недоступне!");
+        }
 
-        public void CorrectMistakes(Task task) { }
+        public void CorrectMistakes(Task task)
+        {
+            throw new NotSupportedException("Завдання вже недоступне!");
+        }
 
-        public void Corrected(Task task) { }
+        public void Corrected(Task task)
+        {
+            throw new NotSupportedException("Завдання вже недоступне!");
+        }
 
-        public void Aprove(Task task) { }
+        public void Aprove(Task task)
+        {
+            throw new NotSupportedException("Завдання вже недоступне!");
+        }
 
         public override string ToString()
         {

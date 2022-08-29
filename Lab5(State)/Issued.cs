@@ -1,4 +1,6 @@
-﻿namespace State
+﻿using System;
+
+namespace State
 {
     /// <summary>
     /// Клас стану завдання "Видано"
@@ -11,13 +13,25 @@
             if (task.IsAvailable()) task.State = new SubmittedForReview();
         }
 
-        public void FoundMistakes(Task task) { }
+        public void FoundMistakes(Task task) 
+        {
+            throw new NotSupportedException("Завдання все ще невиконане!");
+        }
 
-        public void CorrectMistakes(Task task) { }
+        public void CorrectMistakes(Task task)
+        {
+            throw new NotSupportedException("Завдання все ще невиконане!");
+        }
 
-        public void Corrected(Task task) { }
+        public void Corrected(Task task)
+        {
+            throw new NotSupportedException("Завдання все ще невиконане!");
+        }
 
-        public void Aprove(Task task) { }
+        public void Aprove(Task task)
+        {
+            throw new NotSupportedException("Завдання все ще невиконане!");
+        }
 
         public override string ToString()
         {
